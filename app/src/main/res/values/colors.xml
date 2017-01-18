@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="red">#FFFF0000</color>
+    <color name="tab_text_color_selected">#FF88B12D</color>
+    <color name="tab_text_color_unselected">#FFADAAAD</color>
+    <color name="gray">#aaaaaa</color>
+    <color name="orangee">#ff9900</color>
+    <color name="evaluate_button">#ffff8000</color>
+    <color name="evaluate_button_enable_false">#ffcacaca</color>
+    <color name="gray_view_line">#dcdcdf</color>
+    <color name="gray_deep">#666666</color>
+    <color name="gray_deep_deep">#e0e0e0</color>
+    <color name="gray_down_down">#bdbdc3</color>
+    <color name="weekly_item_user_bg">#FF878787</color>
+    <color name="light_blue">#6593cb</color>
+    <color name="login_bg">#FFF4F4F4</color>
+    <color name="login_line">#FFCBCBCB</color>
+    <color name="transparent">#00000000</color>
+    <color name="login_btn_color">#FF525252</color>
+    <color name="blue">#FF0000FF</color>
+    <color name="gray_color">#FFD5D5D5</color>
+    <!-- <color name="theme_color">#FF83d545</color> -->
+    <color name="theme_color">#FF88B12D</color>
+    <color name="theme_color2">#FFAFD041</color>
+    <color name="weekly_status_bg1">#FF81CBEB</color>
+    <color name="weekly_status_bg2">#FFB3B3B3</color>
+    <color name="weekly_location_color">#FF7394C9</color>
+    <color name="pop_bg">#55696969</color>
+    <color name="chatting_bg">#FFEDEDED</color>
+    <color name="chatting_msg_bg">#FFff0000</color>
+    <color name="manager_new_notice_layout_bg">#FFF4D2</color>
+    <color name="manager_new_notice_layout_line">#FFF0DFAA</color>
+    <color name="yellow">#FFFFFF00</color>
+    <color name="green">#FF00FF00</color>
+    <color name="green_down">#FF5bc91c</color>
+    <color name="notice_group_limit_color">#FFEDEDED</color>
+    <color name="notice_list_line">#FFdCDCDC</color>
+    <color name="term_service_color">#71B21A</color>
+
+    <color name="news_color">#D7FEF6</color>
+    <color name="down_bule">#ff6495ED</color>
+    <color name="down_green">#ff669933</color>
+    <color name="orange">#ffff6600</color>
+    <color name="gray_down">#ffE9E9E9</color>
+    <color name="clear">#00000000</color>
+    <color name="login_set_bt">#ff858585</color>
+    <color name="red_exit">#ffF33038</color>
+    <color name="im_msg_text_colot">#ff555555</color>
+    <color name="edit_weekly_gray">#ffF0EFF5</color>
+    <color name="edit_weekly_text">#ff359707</color>
+    <color name="weekly_fragment_bg">#ffF0EFF5</color>
+    <color name="weekly_fragment_grade_red">#ffff0101</color>
+    <color name="weekly_fragment_grade_green">#ff75a522</color>
+    <color name="weekly_fragment_grade_blue">#ff3aa0ff</color>
+    <color name="add_group">#ffFFA800</color>
+
+    <!-- slidebar 颜色 -->
+    <drawable name="sidebar_click">#EBEBEB</drawable>
+    <drawable name="sidebar_white">#FFFFFF</drawable>
+</resources>

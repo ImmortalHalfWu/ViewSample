@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:view="http://schemas.android.com/apk/res/com.viewsample.viewsample"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <com.viewsample.viewsample.views.View2
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="10dp"
+        view:view2_biankuangyanse="#E9967A"
+        view:view2_biaoti="hello view"
+        view:view2_biaotidaxiao="15sp"
+        view:view2_biaotiyanse="#FF6347"
+        view:view2_tupian="@mipmap/b"
+        view:view2_wentujianju="10dp" />
+    
+</RelativeLayout>

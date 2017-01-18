@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:view="http://schemas.android.com/apk/res/com.viewsample.viewsample"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <com.viewsample.viewsample.views.View1
+        
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        view:view_backgroud="#43CD80"
+        view:view_paint_colcr="#FCFCFC" />
+    
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:view="http://schemas.android.com/apk/res/com.viewsample.viewsample"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <com.viewsample.viewsample.views.View5
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        view:default_color="#4c1130"
+        view:choice_color="#00ccff"
+        view:over_color="#FF0000"
+        />
+
+</RelativeLayout>

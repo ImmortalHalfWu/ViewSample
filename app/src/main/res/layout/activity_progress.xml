@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:view="http://schemas.android.com/apk/res/com.viewsample.viewsample"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+        <com.viewsample.viewsample.views.View3
+        android:id="@+id/view2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        view:circle_color_first="#87CEFA"
+        view:circle_color_next="#ffffff"
+        view:circle_radii="100dp"
+        view:circle_rotate_speed="90"
+        view:circle_width="5dp" 
+        />
+
+</RelativeLayout>

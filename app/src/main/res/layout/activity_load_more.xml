@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+    
+    
+    <ExpandableListView 
+        android:id="@+id/expandableListview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ExpandableListView>
+
+     <com.viewsample.viewsample.views.loadMoreView
+        android:id="@+id/loadMoreView1"
+        android:layout_width="match_parent"
+        android:layout_height="100px" >
+    </com.viewsample.viewsample.views.loadMoreView>
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="View1Attr">
+        <attr name="view_backgroud"  format = "color"/>
+        <attr name="view_paint_colcr" format=" color"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="View2Attr">
+        <attr name="view2_biankuangyanse" format="color"></attr>
+        <attr name="view2_tupian" format="reference"></attr>
+        <attr name="view2_biaoti" format="string"></attr>
+        <attr name="view2_biaotiyanse" format="color"></attr>
+        <attr name="view2_biaotidaxiao" format="dimension"></attr>
+        <attr name="view2_wentujianju" format="dimension"></attr>
+    </declare-styleable>
+
+    <declare-styleable name= "View3Attr">
+        <attr name="circle_width" format="dimension"></attr>
+        <attr name="circle_color_first" format="color"></attr>
+        <attr name="circle_color_next" format="color"></attr>
+        <attr name="circle_rotate_speed" format="integer"></attr>
+        <attr name="circle_radii" format="dimension"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="VIew4Attr">
+        <attr name="tag_color" format="color"></attr>
+        <attr name="tag_num" format="integer"></attr>
+        <attr name="image_src" format="reference"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="View5Attr">
+        <attr name="line_num" format="integer"></attr>
+        <attr name="default_color" format="color"></attr>
+        <attr name="choice_color" format="color"></attr>
+        <attr name="over_color" format="color"></attr>
+    </declare-styleable>
+
+</resources>

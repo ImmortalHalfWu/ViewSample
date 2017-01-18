@@ -6,6 +6,7 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.RectF;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.WindowManager;
@@ -370,23 +371,23 @@ public class ProgressButtonView extends View {
 
                 }
 
-                try {
-                    sleep(sleepTime);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                    break;
-                }
-
-//                synchronized (PoorThread.this){
-//                    try {
-//                        Log.i("PoorThread", "sleepPoorThread : " + true);
-//                        PoorThread.this.wait(sleepTime);
-//                    } catch (InterruptedException e) {
-//                        e.printStackTrace();
-//                        Log.i("PoorThread", "sleepPoorThread : " + false);
-//                        break;
-//                    }
+//                try {
+//                    sleep(sleepTime);
+//                } catch (InterruptedException e) {
+//                    e.printStackTrace();
+//                    break;
 //                }
+
+                synchronized (PoorThread.this){
+                    try {
+                        Log.i("PoorThread", "sleepPoorThread : " + true);
+                        PoorThread.this.wait(sleepTime);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                        Log.i("PoorThread", "sleepPoorThread : " + false);
+                        break;
+                    }
+                }
 
                 postInvalidate();
 

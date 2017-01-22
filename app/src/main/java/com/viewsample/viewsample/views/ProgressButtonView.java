@@ -2,11 +2,9 @@ package com.viewsample.viewsample.views;
 
 import android.content.Context;
 import android.graphics.Canvas;
-import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.RectF;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.WindowManager;
@@ -21,7 +19,7 @@ import android.view.WindowManager;
  * <P>2,宽高相等，默认为屏幕宽高取小的1/4，也可外部定义</P>
  * <P>3,默认为内外两个圆，外圆半径为控件宽高取小1/3，内圆半径为控件宽高取小1/4，外部圆颜色深于内部圆</P>
  * <P>4,操作为为短按跟长按，短按不考虑</P>
- * <p>5,长按，外部圆放大，内部圆缩小，在外部圆上，依边画绿色进度条，进度条宽度为控件宽度的1/5</p>
+ * <p>5,长按，外部圆放大，内部圆缩小，在外部圆上，依边画绿色进度条，进度条宽度为控件宽度的1/25</p>
  * <p>6,抬起手指，分短按与长按，回调</p>
  * <p></p>
  * <p>状态</p>
@@ -74,6 +72,7 @@ public class ProgressButtonView extends View {
      * 进度条的颜色，进度条的宽度，
      */
     private int progressColor = 0xff00cc33,progressWidth;
+
     /**
      * 画进度条时的弧度
      */
@@ -81,7 +80,7 @@ public class ProgressButtonView extends View {
     /**
      * 进度条最长时间
      */
-    private int progressMaxTime = 3 * 1000;
+    private int progressMaxTime = 10 * 1000;
     /**
      * 画笔
      */
@@ -203,13 +202,6 @@ public class ProgressButtonView extends View {
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
 
-        /*
-        MeasureSpec.EXACTLY：父视图希望子视图的大小应该是specSize中指定的。
-
-        MeasureSpec.AT_MOST：子视图的大小最多是specSize中指定的值，也就是说不建议子视图的大小超过specSize中给定的值。
-
-        MeasureSpec.UNSPECIFIED：我们可以随意指定视图的大小。
-        */
 
         int widMod = MeasureSpec.getMode(widthMeasureSpec);
         int heiMod = MeasureSpec.getMode(heightMeasureSpec);
@@ -239,7 +231,7 @@ public class ProgressButtonView extends View {
 
     @Override
     protected void onDraw(Canvas canvas) {
-        canvas.drawColor(Color.TRANSPARENT);
+
         //画外圆
         mPaint.setColor(outCircleColor);
         canvas.drawCircle(canvas.getWidth() / 2,canvas.getHeight() /2,drawOutCircleRadius,mPaint);
@@ -539,7 +531,6 @@ public class ProgressButtonView extends View {
     @Override
     protected void onDetachedFromWindow() {
         //销毁
-        super.onDetachedFromWindow();
 
         mStateMachine = null;
         if (mPaint != null){
@@ -555,5 +546,23 @@ public class ProgressButtonView extends View {
         if (mPoorThread != null){
             mPoorThread.finishPoorThread();
         }
+
+        super.onDetachedFromWindow();
+    }
+
+    public void setProgressMaxTime(int progressMaxTime) {
+        this.progressMaxTime = progressMaxTime;
+    }
+
+    public void setInCircleColor(int inCircleColor) {
+        this.inCircleColor = inCircleColor;
+    }
+
+    public void setOutCircleColor(int outCircleColor) {
+        this.outCircleColor = outCircleColor;
+    }
+
+    public void setProgressColor(int progressColor) {
+        this.progressColor = progressColor;
     }
 }

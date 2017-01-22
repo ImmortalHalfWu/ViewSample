@@ -12,7 +12,10 @@ import com.viewsample.viewsample.views.ProgressButtonView;
 public class ActivityProgressButton extends AppCompatActivity {
 
     private static final String TAG = "ActivityProgressButton";
-    private ProgressButtonView mProgressBt;
+    private ProgressButtonView mProgressBt1;
+    private ProgressButtonView mProgressBt2;
+    private ProgressButtonView mProgressBt3;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,8 +25,8 @@ public class ActivityProgressButton extends AppCompatActivity {
     }
 
     private void initView() {
-        mProgressBt  = (ProgressButtonView) findViewById(R.id.progressButtonView);
-        mProgressBt.setCallBackListener(new ProgressButtonView.CallBackListener() {
+        mProgressBt1  = (ProgressButtonView) findViewById(R.id.progressButtonView1);
+        mProgressBt1.setCallBackListener(new ProgressButtonView.CallBackListener() {
             @Override
             public void shortClick() {
 //                Log.i(TAG, "shortClick: ");
@@ -49,5 +52,17 @@ public class ActivityProgressButton extends AppCompatActivity {
 //                Log.i(TAG, "move: ");
             }
         });
+
+        mProgressBt2 = (ProgressButtonView) findViewById(R.id.progressButtonView2);
+        mProgressBt2.setInCircleColor(0xffffffff);
+        mProgressBt2.setOutCircleColor(0xff99cccc);
+        mProgressBt2.setProgressColor(0xff336699);
+        mProgressBt2.setProgressMaxTime(3*1000);
+
+        mProgressBt3 = (ProgressButtonView) findViewById(R.id.progressButtonView3);
+        mProgressBt3.setInCircleColor(0xffffffcc);
+        mProgressBt3.setOutCircleColor(0xffff9900);
+        mProgressBt3.setProgressColor(0xff99cc33);
+        mProgressBt3.setProgressMaxTime(6*1000);
     }
 }

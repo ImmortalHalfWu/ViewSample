@@ -1,13 +1,7 @@
 <resources>
 
 
-    <!--<style name="AppTheme.NoActionBar" parent="AppTheme">-->
-        <!--<item name="windowActionBar">false</item>-->
-        <!--<item name="windowNoTitle">true</item>-->
-
-    <!--</style>-->
-
-    <style name="WeChatActivituTheme" parent="AppTheme.NoActionBar">
+    <style name="WeChatActivityVideoTheme" parent="AppTheme.NoActionBar">
         <item name="android:windowTranslucentNavigation">true</item>
         <item name="android:windowTranslucentStatus">true</item>
     </style>

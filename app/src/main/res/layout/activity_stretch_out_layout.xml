@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activitys.ActivityStretchOutLayout">
+
+    <com.viewsample.viewsample.viewgorups.StretchOutLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:text="asdasdasd"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:text="asdasdasd"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:text="asdasdasd"/>
+
+    </com.viewsample.viewsample.viewgorups.StretchOutLayout>
+
+</LinearLayout>

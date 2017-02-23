@@ -1,7 +1,7 @@
 <resources>
 
 
-    <style name="WeChatActivituTheme" parent="AppTheme.NoActionBar">
+    <style name="WeChatActivityVideoTheme" parent="AppTheme.NoActionBar">
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
         <item name="android:statusBarColor">?attr/colorPrimary</item>
     </style>

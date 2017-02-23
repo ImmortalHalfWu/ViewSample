@@ -13,7 +13,12 @@
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
+        android:name=".applications.BaseApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -36,10 +41,15 @@
         <activity android:name=".activitys.ActivityTimeTable" />
         <activity android:name=".activitys.ActivityListViewSpinner" />
         <activity android:name=".activitys.ActivityLoadMore" />
+        <activity android:name=".activitys.ActivityProgressButton"/>
+        <activity
+            android:name=".activitys.ActivityTencentX5WebView"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:configChanges="orientation|screenSize|keyboardHidden"/>
         <activity
             android:name=".activitys.ActivityWeChatSmallVideo"
-            android:theme="@style/WeChatActivituTheme" />
-        <activity android:name=".activitys.ActivityProgressButton"></activity>
+            android:theme="@style/WeChatActivityVideoTheme" />
+
     </application>
 
 </manifest>

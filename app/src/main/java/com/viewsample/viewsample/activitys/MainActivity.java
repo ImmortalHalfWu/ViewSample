@@ -45,7 +45,9 @@ public class MainActivity extends SuperActivity {
         listDate.add(new ListviewItemDate("动态添加spinner", com.viewsample.viewsample.activitys.ActivityListViewSpinner.class));
         listDate.add(new ListviewItemDate("上拉加载", com.viewsample.viewsample.activitys.ActivityLoadMore.class));
         listDate.add(new ListviewItemDate("微信视频进度条按钮", com.viewsample.viewsample.activitys.ActivityProgressButton.class));
-//        listDate.add(new ListviewItemDate("微信小视频", com.viewsample.viewsample.activitys.ActivityWeChatSmallVideo.class));
+        listDate.add(new ListviewItemDate("微信视频伸缩布局", com.viewsample.viewsample.activitys.ActivityStretchOutLayout.class));
+        listDate.add(new ListviewItemDate("微信小视频", com.viewsample.viewsample.activitys.ActivityWeChatSmallVideo.class));
+        listDate.add(new ListviewItemDate("X5内核WebView", ActivityTencentX5WebView.class));
 
     }
 

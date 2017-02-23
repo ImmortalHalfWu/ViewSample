@@ -13,7 +13,7 @@
         <item name="windowNoTitle">true</item>
     </style>
 
-    <style name="WeChatActivituTheme" parent="AppTheme.NoActionBar">
+    <style name="WeChatActivityVideoTheme" parent="AppTheme.NoActionBar">
     </style>
 
 </resources>

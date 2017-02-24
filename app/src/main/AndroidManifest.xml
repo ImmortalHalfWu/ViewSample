@@ -42,6 +42,7 @@
         <activity android:name=".activitys.ActivityListViewSpinner" />
         <activity android:name=".activitys.ActivityLoadMore" />
         <activity android:name=".activitys.ActivityProgressButton"/>
+        <activity android:name=".activitys.ActivityFadingTextView"/>
         <activity
             android:name=".activitys.ActivityTencentX5WebView"
             android:windowSoftInputMode="stateHidden|adjustResize"

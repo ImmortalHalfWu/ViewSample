@@ -39,12 +39,10 @@ public class BaseApplication extends Application {
         QbSdk.initX5Environment(this, new QbSdk.PreInitCallback() {
             @Override
             public void onCoreInitFinished() {
-                Toast.makeText(baseApplication,"onCoreInitFinished",Toast.LENGTH_LONG).show();
             }
 
             @Override
             public void onViewInitFinished(boolean b) {
-                Toast.makeText(baseApplication,"onViewInitFinished : " + b,Toast.LENGTH_LONG).show();
             }
         });
         

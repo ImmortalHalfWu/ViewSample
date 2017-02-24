@@ -31,8 +31,7 @@ public class MainActivity extends SuperActivity {
     }
 
     private void initDate() {
-
-        listDate = new ArrayList<MainActivity.ListviewItemDate>();
+        listDate = new ArrayList<>();
         listDate.add(new ListviewItemDate("钟表", com.viewsample.viewsample.activitys.ActivityClock.class));
         listDate.add(new ListviewItemDate("图文", com.viewsample.viewsample.activitys.ActivityImageWithTxt.class));
         listDate.add(new ListviewItemDate("简单进度条", com.viewsample.viewsample.activitys.ActivityProgress.class));
@@ -48,6 +47,7 @@ public class MainActivity extends SuperActivity {
         listDate.add(new ListviewItemDate("微信视频伸缩布局", com.viewsample.viewsample.activitys.ActivityStretchOutLayout.class));
         listDate.add(new ListviewItemDate("微信小视频", com.viewsample.viewsample.activitys.ActivityWeChatSmallVideo.class));
         listDate.add(new ListviewItemDate("X5内核WebView", ActivityTencentX5WebView.class));
+        listDate.add(new ListviewItemDate("渐入渐出TextView", ActivityFadingTextView.class));
 
     }
 
@@ -65,7 +65,7 @@ public class MainActivity extends SuperActivity {
         });
     }
 
-    class MyAdapter extends BaseAdapter{
+    final class MyAdapter extends BaseAdapter{
 
         @Override
         public int getCount() {
@@ -100,10 +100,10 @@ public class MainActivity extends SuperActivity {
 
     }
 
-    class ListviewItemDate{
+    final class ListviewItemDate{
 
-        public String itemName;
-        public Class<?> nextActivity;
+        public final String itemName;
+        public final Class<?> nextActivity;
 
 
         public ListviewItemDate(String name, Class<?> activity) {

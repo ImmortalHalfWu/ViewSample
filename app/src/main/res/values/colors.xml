@@ -37,7 +37,7 @@
     <color name="manager_new_notice_layout_line">#FFF0DFAA</color>
     <color name="yellow">#FFFFFF00</color>
     <color name="green">#FF00FF00</color>
-    <color name="green_down">#FF5bc91c</color>
+    <color name="green_down">#67ac40</color>
     <color name="notice_group_limit_color">#FFEDEDED</color>
     <color name="notice_list_line">#FFdCDCDC</color>
     <color name="term_service_color">#71B21A</color>

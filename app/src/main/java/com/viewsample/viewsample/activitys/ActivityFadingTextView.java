@@ -1,70 +1,35 @@
 package com.viewsample.viewsample.activitys;
 
 
-import android.graphics.Color;
 import android.os.Bundle;
-import android.view.View;
+import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.viewsample.viewsample.R;
+import com.viewsample.viewsample.views.FadingTextViewBuilder;
 
 public class ActivityFadingTextView extends SuperActivity {
 
-    private TextView textView;
+    private ViewGroup viewGroup;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fading_textview);
-        
+
         initView();
-        
+
     }
 
     private void initView() {
+        viewGroup = (ViewGroup) findViewById(R.id.LinearLayout);
+        int childCount = viewGroup.getChildCount();
 
-        textView = (TextView) findViewById(R.id.textView);
-        findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
-            int r = Color.red(0xffFF0000);
-            int g = Color.green(0xffFF0000);
-            int b = Color.blue(0xffFF0000);
-            int a = Color.alpha(0x55FF0000);
-            @Override
-            public void onClick(View v) {
-                textView.setAlpha(1f);
-                int textColor = textView.getCurrentTextColor();
-                int textR = Color.red(textColor);
-                int textG = Color.green(textColor);
-                int textB = Color.blue(textColor);
-                int textA = Color.alpha(textColor);
-                textView.setTextColor(Color.rgb(
-//                        textA - (textA - a)/10,
-                        textR - (textR-r)/2,
-                        textG - (textG-g)/2,
-                        textB - (textB-b)/2
-                ));
-            }
-        });
-        findViewById(R.id.button2).setOnClickListener(new View.OnClickListener() {
-            int r = Color.red(0xffFF0000);
-            int g = Color.green(0xffFF0000);
-            int b = Color.blue(0xffFF0000);
-            int a = Color.alpha(0x55FF0000);
-            @Override
-            public void onClick(View v) {
-                int textColor = textView.getCurrentTextColor();
-                int textR = Color.red(textColor);
-                int textG = Color.green(textColor);
-                int textB = Color.blue(textColor);
-                int textA = Color.alpha(textColor);
-                textView.setTextColor(Color.rgb(
-//                        textA + (textA - a)/10,
-                        textR + (textR-r)/2,
-                        textG + (textG-g)/2,
-                        textB + (textB-b)/2
-                ));
-            }
-        });
+        for (int i = 0 ; i < childCount ; i++){
+            TextView textView = (TextView) viewGroup.getChildAt(i);
+            new FadingTextViewBuilder(textView,new String[]{"SEPTEMBER 21ST","1945","THAT WAS THE NIGHT I DIED"}, (int) (Math.random()*1000%1000+1000)).builder().start();
+        }
+
 
     }
 }

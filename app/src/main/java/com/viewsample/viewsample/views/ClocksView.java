@@ -10,7 +10,6 @@ import android.view.View;
 import android.view.WindowManager;
 
 import com.viewsample.viewsample.R;
-import com.viewsample.viewsample.R.styleable;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -21,21 +20,21 @@ import java.util.Date;
  * @version 3.0 
  *  @return  
  */
-public class View1 extends View {
+public class ClocksView extends View {
 
 	private Context mContext;
 	private Paint mPaint;
 	private int canvesBackgroudColor;
 	private int paintColor;
 	
-	public View1(Context context) {
+	public ClocksView(Context context) {
 		this(context, null);
 		// TODO Auto-generated constructor stub
 	}
-	public View1(Context context, AttributeSet attrs) {
+	public ClocksView(Context context, AttributeSet attrs) {
 		this(context, attrs, 0);
 	}
-	public View1(Context context, AttributeSet attrs, int defStyleAttr) {
+	public ClocksView(Context context, AttributeSet attrs, int defStyleAttr) {
 		super(context, attrs, defStyleAttr);
 		// TODO Auto-generated constructor stub.
 		

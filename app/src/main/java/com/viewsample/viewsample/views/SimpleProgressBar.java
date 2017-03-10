@@ -18,7 +18,7 @@ import com.viewsample.viewsample.R;
  * @date 创建时间：2016年6月2日 上午9:16:50 * 
  * @version   3.0
  */     
-public class View3 extends View {
+public class SimpleProgressBar extends View {
 
 	private Context mContext;
 	
@@ -69,15 +69,15 @@ public class View3 extends View {
 	
 	private Paint mPaint ;
 	
-	public View3(Context context) {
+	public SimpleProgressBar(Context context) {
 		this(context, null);
 		// TODO Auto-generated constructor stub
 	}
-	public View3(Context context, AttributeSet attrs) {
+	public SimpleProgressBar(Context context, AttributeSet attrs) {
 		this(context, attrs, 0);
 		// TODO Auto-generated constructor stub
 	}
-	public View3(Context context, AttributeSet attrs, int defStyleAttr) {
+	public SimpleProgressBar(Context context, AttributeSet attrs, int defStyleAttr) {
 		super(context, attrs, defStyleAttr);
 		// TODO Auto-generated constructor stub
 		mContext = context;

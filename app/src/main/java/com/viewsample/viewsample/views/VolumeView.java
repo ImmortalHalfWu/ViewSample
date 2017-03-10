@@ -17,14 +17,18 @@ import android.view.WindowManager;
 
 import com.viewsample.viewsample.R;
 
-/** 
- * @author  WuImmortalHalf 
- * @date 创建时间：2016年6月2日 下午12:56:49 
- * @version 3.0 
- *  @return  
- */
+/**
+ *
+ * Name:    VolumeView
+ *
+ * User:    WuImmortalHalf
+ * Data:    2016年6月2日 下午12:56:49
+ *
+ * Todo:    ( 音量指示器 )
+ *
+*/
 @SuppressLint("DrawAllocation")
-public class View4 extends View implements OnTouchListener {
+public class VolumeView extends View implements OnTouchListener {
 
 	private Context mContext;
 	/**  
@@ -68,15 +72,15 @@ public class View4 extends View implements OnTouchListener {
 	
 	private Paint mPaint;
 	
-	public View4(Context context) {
+	public VolumeView(Context context) {
 		this(context, null, 0);
 		// TODO Auto-generated constructor stub
 	}
-	public View4(Context context, AttributeSet attrs) {
+	public VolumeView(Context context, AttributeSet attrs) {
 		this(context, attrs, 0);
 		// TODO Auto-generated constructor stub
 	}
-	public View4(Context context, AttributeSet attrs, int defStyleAttr) {
+	public VolumeView(Context context, AttributeSet attrs, int defStyleAttr) {
 		super(context, attrs, defStyleAttr);
 		
 		mContext = context;

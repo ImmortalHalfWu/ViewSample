@@ -20,11 +20,10 @@ import java.util.Map;
 
 /** 
  * @author  WuImmortalHalf 
- * @date 创建时间：2016年6月3日 下午2:13:16 
- * @version 3.0 
- *  @return  
+ * @date 创建时间：2016年6月3日 下午2:13:16
+ * todo:(手势锁)
  */
-public class View5 extends View {
+public class GestureLockView extends View {
 
 	private Context mContext;
 	
@@ -86,17 +85,17 @@ public class View5 extends View {
 	*/  
 	private float overState = 10002;
 	
-	public View5(Context context) {
+	public GestureLockView(Context context) {
 		this(context, null);
 		// TODO Auto-generated constructor stub
 	}
 	
-	public View5(Context context, AttributeSet attrs) {
+	public GestureLockView(Context context, AttributeSet attrs) {
 		this(context, attrs, 0);
 		// TODO Auto-generated constructor stub
 	}
 	
-	public View5(Context context, AttributeSet attrs, int defStyleAttr) {
+	public GestureLockView(Context context, AttributeSet attrs, int defStyleAttr) {
 		super(context, attrs, defStyleAttr);
 		
 		this.setLayerType(View.LAYER_TYPE_SOFTWARE, null);

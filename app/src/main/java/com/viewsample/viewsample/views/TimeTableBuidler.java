@@ -32,7 +32,7 @@ public class TimeTableBuidler {
 	
 	private void initSources() {
 		// TODO Auto-generated method stub
-		sources = new ArrayList<TimeTableAdapter.TimeTableBean>(TimeTableAdapter.columnsCount * maxRows);
+		sources = new ArrayList<>(TimeTableAdapter.columnsCount * maxRows);
 		sources.add(TimeTableBean.newInstance("九月"));
 		sources.add(TimeTableBean.newInstance("周一"));
 		sources.add(TimeTableBean.newInstance("周二"));
@@ -66,8 +66,10 @@ public class TimeTableBuidler {
 	 	* @return  
 	 */    
 	public TimeTableBuidler addCourse(String courseName, int fewWeeks, int start, int end) {
-		int index = (start) * TimeTableAdapter.columnsCount +fewWeeks+1;
+		int index = (start) * TimeTableAdapter.columnsCount +fewWeeks;
 		sources.set(index,TimeTableBean.newInstance(courseName,end - start+1,start));
+//		int index = (start) * TimeTableAdapter.columnsCount +fewWeeks+1;
+//		sources.set(index,TimeTableBean.newInstance(courseName,end - start+1,start));
 		return this;
 	}
 	

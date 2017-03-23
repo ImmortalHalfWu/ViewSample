@@ -5,6 +5,7 @@ import android.hardware.Camera;
 import android.media.MediaRecorder;
 import android.support.annotation.NonNull;
 import android.view.Surface;
+import android.widget.Toast;
 
 import java.io.IOException;
 
@@ -160,7 +161,11 @@ public class MediaRecorderLifer {
             mediaRecorderStaue = STAUE_OVER;
             mediaRecorder.setPreviewDisplay(null);
             mediaRecorder.setOnErrorListener(null);
-            mediaRecorder.stop();
+            try {
+                mediaRecorder.stop();
+            }catch (RuntimeException e){
+                e.printStackTrace();
+            }
         }
 
         return this;

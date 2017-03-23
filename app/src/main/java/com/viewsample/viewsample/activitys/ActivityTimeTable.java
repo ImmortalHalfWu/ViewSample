@@ -28,7 +28,6 @@ public class ActivityTimeTable extends SuperActivity{
 	}
 
 	private void initView() {
-//		configTopLinearlayout();
 		configRecyclerView();
 	}
 
@@ -36,20 +35,18 @@ public class ActivityTimeTable extends SuperActivity{
 		// TODO Auto-generated method stub
 		RecyclerView mRecyclerView = (RecyclerView) findViewById(R.id.recyclerview);
 		mRecyclerView.setLayoutManager(new StaggeredGridLayoutManager(8, StaggeredGridLayoutManager.VERTICAL));
-//		mRecyclerView.setLayoutManager(new GridLayoutManager(this, TimeTableAdapter.columnsCount));
 		mRecyclerView.setAdapter(
-				TimeTableBuidler.create(20)
-				.addCourse("高数数数数数数数", 2, 1, 3)
-				.addCourse("数电数数数数数数数", 1, 4, 6)
-				.addCourse("数电数数数数数数数", 1, 7, 9)
-				.addCourse("数电数数数数数数数", 3, 6, 6)
+				TimeTableBuidler.create(10)
+				.addCourse("高数", 2, 1, 3)
+				.addCourse("数电", 1, 4, 6)
+				.addCourse("JAVA", 1, 7, 9)
+				.addCourse("SQL", 3, 6, 6)
 				.Builder(this)
 				);
 //		mRecyclerView.addItemDecoration(new DividerGridItemDecoration(this));
 	}
 
 	private void configTopLinearlayout() {
-		// TODO Auto-generated method stub
 
 		// TODO Auto-generated method stub
 		LinearLayout mLayout = (LinearLayout) findViewById(R.id.LinearLayout);
